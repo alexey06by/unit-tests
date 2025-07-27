@@ -35,4 +35,4 @@ describe("Positive tests", function(){
         expect(user.email).to.equal('TEST@GMAIL.COM');
         expect(user.isActive).to.equal(true);        
     });    
-})
+});

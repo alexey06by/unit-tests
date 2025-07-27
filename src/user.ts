@@ -4,7 +4,7 @@ export class User {
     isActive: boolean;
 
     constructor(name:string, email:string){
-        const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const reg = /^[a-zA-Z0-9._%+-]+@gmail\.com$/i;
         if (!name || !email){
             throw new Error('Please specify name and email');
         } else if (!reg.test(email)){
